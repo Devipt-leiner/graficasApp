@@ -4,14 +4,11 @@
 <div class="row">
   <div class="col">
     <div style="display: block">
-      <canvas
-        baseChart
-        [datasets]="barChartData"
-        [labels]="barChartLabels"
+      <canvas baseChart
+        [data]="barChartData"
         [options]="barChartOptions"
-        [legend]="barChartLegend"
-        [chartType]="barChartType"
-      >
+        [plugins]="barChartPlugins"
+        [type]="barChartType">
       </canvas>
     </div>
 
