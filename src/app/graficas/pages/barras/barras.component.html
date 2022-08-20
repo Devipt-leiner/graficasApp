@@ -4,7 +4,9 @@
 <div class="row">
   <div class="col">
     <div style="display: block">
-      <canvas baseChart>
+      <canvas baseChart
+        [data]="barChartData"
+        [type]="barChartType">
       </canvas>
     </div>
 
